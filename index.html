@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Environment Variables Example</title>
+    <link rel="stylesheet" href="styles.css" />
+    <script>
+      // Embedding the environment variables in a script tag
+      window.env = {
+        USERNAME: "coalition",
+        PASSWORD: "skills-test",
+      };
+    </script>
+    <script src="app.js" defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  </head>
+
+  <body>
+    <!-- Navbar -->
+    <nav class="navbar">
+      <div class="logo"><img src="assets/TestLogo.jpg" alt="/" /></div>
+      <div class="nav-item">
+        <ul>
+          <li>
+            <img
+              src="assets/home_FILL0_wght300_GRAD0_opsz24.jpg"
+              alt=""
+            />Overview
+          </li>
+          <li style="background-color: #01f0d0; border-radius: 30px">
+            <img
+              style="background-color: transparent; width: 18px"
+              src="assets/group_FILL0_wght300_GRAD0_opsz24.png"
+              alt=""
+            />Patients
+          </li>
+          <li>
+            <img
+              src="assets/calendar_today_FILL0_wght300_GRAD0_opsz24.jpg"
+              alt=""
+            />Schedule
+          </li>
+          <li>
+            <img
+              src="assets/chat_bubble_FILL0_wght300_GRAD0_opsz24.jpg"
+              alt=""
+            />Message
+          </li>
+          <li>
+            <img
+              src="assets/credit_card_FILL0_wght300_GRAD0_opsz24.jpg"
+              alt=""
+            />Transactions
+          </li>
+        </ul>
+      </div>
+      <div class="side-item">
+        <img
+          src="assets/senior-woman-doctor-and-portrait-smile-for-health-2023-11-27-05-18-16-utc.jpg"
+          alt=""
+        />
+        <div>
+          <p class="name">Dr. Jose Simmons</p>
+          <p class="pro">General Practitioner</p>
+        </div>
+      </div>
+      <div class="settings">
+        <img src="assets/settings_FILL0_wght300_GRAD0_opsz24.jpg" alt="" />
+        <img src="assets/more_vert_FILL0_wght300_GRAD0_opsz24.jpg" alt="" />
+      </div>
+    </nav>
+
+    <div class="container">
+      <!-- left container of the body -->
+      <div class="left-con">
+        <div class="header">
+          <h1>Patients</h1>
+          <img src="assets/search_FILL0_wght300_GRAD0_opsz24.jpg" alt="" />
+        </div>
+        <div class="content">
+          <img style="margin-left: 10px" src="assets/Layer 8.jpg" alt="" />
+          <div style="background-color: #ffffff">
+            <p style="font-weight: bold">Emily Williams</p>
+            <p style="color: #707070">Female, 18</p>
+          </div>
+          <img
+            style="margin-right: 15px"
+            src="assets/more_horiz_FILL0_wght300_GRAD0_opsz24.jpg"
+            alt=""
+          />
+        </div>
+        <div class="content">
+          <img style="margin-left: 10px" src="assets/Layer 1.jpg" alt="" />
+          <div style="background-color: #ffffff">
+            <p style="font-weight: bold">Ryan Johnson</p>
+            <p style="color: #707070">Male, 45</p>
+          </div>
+          <img
+            style="margin-right: 15px"
+            src="assets/more_horiz_FILL0_wght300_GRAD0_opsz24.jpg"
+            alt=""
+          />
+        </div>
+        <div class="content">
+          <img style="margin-left: 10px" src="assets/Layer 3.jpg" alt="" />
+          <div style="background-color: #ffffff; margin-left: 7px">
+            <p style="font-weight: bold">Brandon Mitchell</p>
+            <p style="color: #707070">Male, 35</p>
+          </div>
+          <img
+            style="margin-right: 15px"
+            src="assets/more_horiz_FILL0_wght300_GRAD0_opsz24.jpg"
+            alt=""
+          />
+        </div>
+        <div
+          class="content"
+          style="
+            background-color: #d8fcf7;
+            padding-top: 10px;
+            padding-bottom: 10px;
+          "
+        >
+          <img
+            style="margin-left: 10px; background-color: #d8fcf7"
+            src="assets/Layer 2.png"
+            alt=""
+          />
+          <div style="background-color: #d8fcf7">
+            <p style="font-weight: bold; background-color: #d8fcf7">
+              Jessica Taylor
+            </p>
+            <p style="color: #707070; background-color: #d8fcf7">Female, 28</p>
+          </div>
+          <img
+            style="margin-right: 15px"
+            src="assets/more_horiz_FILL0_wght300_GRAD0_opsz24.jpg"
+            alt=""
+          />
+        </div>
+        <div class="content">
+          <img style="margin-left: 10px" src="assets/Layer 6.jpg" alt="" />
+          <div style="background-color: #ffffff">
+            <p style="font-weight: bold">Samantha Johnson</p>
+            <p style="color: #707070">Female, 56</p>
+          </div>
+          <img
+            style="margin-right: 15px"
+            src="assets/more_horiz_FILL0_wght300_GRAD0_opsz24.jpg"
+            alt=""
+          />
+        </div>
+        <div class="content">
+          <img style="margin-left: 10px" src="assets/Layer 12.jpg" alt="" />
+          <div style="background-color: #ffffff">
+            <p style="font-weight: bold">Ashley Martinez</p>
+            <p style="color: #707070">Female, 54</p>
+          </div>
+          <img
+            style="margin-right: 15px"
+            src="assets/more_horiz_FILL0_wght300_GRAD0_opsz24.jpg"
+            alt=""
+          />
+        </div>
+        <div class="content">
+          <img style="margin-left: 10px" src="assets/Layer 10.jpg" alt="" />
+          <div style="background-color: #ffffff">
+            <p style="font-weight: bold">Olivia Brown</p>
+            <p style="color: #707070">Female, 32</p>
+          </div>
+          <img
+            style="margin-right: 15px"
+            src="assets/more_horiz_FILL0_wght300_GRAD0_opsz24.jpg"
+            alt=""
+          />
+        </div>
+        <div class="content">
+          <img style="margin-left: 10px" src="assets/Layer 9.jpg" alt="" />
+          <div style="background-color: #ffffff">
+            <p style="font-weight: bold">Tyler Davis</p>
+            <p style="color: #707070">Male, 19</p>
+          </div>
+          <img
+            style="margin-right: 15px"
+            src="assets/more_horiz_FILL0_wght300_GRAD0_opsz24.jpg"
+            alt=""
+          />
+        </div>
+        <div class="content">
+          <img style="margin-left: 10px" src="assets/Layer 4.jpg" alt="" />
+          <div style="background-color: #ffffff">
+            <p style="font-weight: bold">Kevin Anderson</p>
+            <p style="color: #707070">Male, 30</p>
+          </div>
+          <img
+            style="margin-right: 15px"
+            src="assets/more_horiz_FILL0_wght300_GRAD0_opsz24.jpg"
+            alt=""
+          />
+        </div>
+        <div class="content">
+          <img style="margin-left: 10px" src="assets/Layer 5.jpg" alt="" />
+          <div style="background-color: #ffffff">
+            <p style="font-weight: bold">Dylan Thompson</p>
+            <p style="color: #707070">Male, 36</p>
+          </div>
+          <img
+            style="margin-right: 15px"
+            src="assets/more_horiz_FILL0_wght300_GRAD0_opsz24.jpg"
+            alt=""
+          />
+        </div>
+        <div class="content">
+          <img style="margin-left: 10px" src="assets/Layer 7.jpg" alt="" />
+          <div style="background-color: #ffffff">
+            <p style="font-weight: bold">Nathan Evans</p>
+            <p style="color: #707070">Male, 58</p>
+          </div>
+          <img
+            style="margin-right: 15px"
+            src="assets/more_horiz_FILL0_wght300_GRAD0_opsz24.jpg"
+            alt=""
+          />
+        </div>
+        <div class="content">
+          <img
+            style="margin-left: 10px"
+            src="assets/pexels-photo-1222271.jpg"
+            alt=""
+          />
+          <div style="background-color: #ffffff">
+            <p style="font-weight: bold">Mike Nolan</p>
+            <p style="color: #707070">Male, 31</p>
+          </div>
+          <img
+            style="margin-right: 15px"
+            src="assets/more_horiz_FILL0_wght300_GRAD0_opsz24.jpg"
+            alt=""
+          />
+        </div>
+      </div>
+
+      <!-- middle container -->
+      <div class="mid-con">
+        <div class="mid-con1">
+          <h1>Diagnosis History</h1>
+          <div class="bp">
+            <canvas
+              id="myChart"
+              style="
+                max-width: 400px;
+                height: 100%;
+                padding: 0 0 10px 10px;
+                background-color: #f4f0fe;
+                border-top-left-radius: 10px;
+                border-bottom-left-radius: 10px;
+              "
+            ></canvas>
+            <div class="labels">
+              <div class="systolic">
+                <h3>Systolic</h3>
+                <h2 id="systolic_value"></h2>
+                <p id="systolic_level"></p>
+              </div>
+              <div class="diastolic">
+                <h3>Diastolic</h3>
+                <h2 id="diastolic_value"></h2>
+                <p id="diastolic_level"></p>
+              </div>
+            </div>
+          </div>
+          <div class="rth">
+            <div class="rth123" style="background-color: #e0f3fa">
+              <img src="assets/respiratory rate.jpg" alt="" />
+              <p style="background-color: #e0f3fa">Respiratory Rate</p>
+              <h2 id="respiratory_rate" style="background-color: #e0f3fa"></h2>
+              <p
+                id="respiratory_level"
+                style="margin-top: 30px; background-color: #e0f3fa"
+              ></p>
+            </div>
+            <div class="rth123" style="background-color: #ffe6e9">
+              <img src="assets/temperature.jpg" alt="" />
+              <p style="background-color: #ffe6e9">Temperature</p>
+              <h2 id="temperature" style="background-color: #ffe6e9"></h2>
+              <p
+                id="temperature_level"
+                style="margin-top: 30px; background-color: #ffe6e9"
+              ></p>
+            </div>
+            <div class="rth123" style="background-color: #ffe6f1">
+              <img src="assets/HeartBPM.jpg" alt="" />
+              <p style="background-color: #ffe6f1">Heart Rate</p>
+              <h2 id="heart_rate" style="background-color: #ffe6f1"></h2>
+              <p
+                id="heart_level"
+                style="margin-top: 30px; background-color: #ffe6f1"
+              ></p>
+            </div>
+          </div>
+        </div>
+
+        <div class="mid-con2">
+          <h1>Diagnostic List</h1>
+          <div class="heading">
+            <p>Problem/Diagnosis</p>
+            <p>Description</p>
+            <p>Status</p>
+          </div>
+          <div id="diagnostic_list" class="diagnostic-list"></div>
+        </div>
+      </div>
+      <!-- right container  -->
+      <div class="right-con">
+        <div class="right-con1">
+          <img
+            style="
+              width: 180px;
+              height: 180px;
+              margin: 20px 75px;
+              background-color: #fff;
+            "
+            id="profile_picture"
+            alt="Jessica Taylor's Profile Picture"
+          />
+          <h1 id="name"></h1>
+          <div class="content">
+            <img style="margin-left: 10px" src="assets/BirthIcon.jpg" alt="" />
+            <div style="background-color: #ffffff; width: 250px">
+              <p>Date Of Birth</p>
+              <p id="date_of_birth" style="font-weight: bold"></p>
+            </div>
+          </div>
+          <div class="content">
+            <img style="margin-left: 10px" src="assets/FemaleIcon.jpg" alt="" />
+            <div style="background-color: #ffffff; width: 250px">
+              <p>Gender</p>
+              <p id="gender" style="font-weight: bold"></p>
+            </div>
+          </div>
+          <div class="content">
+            <img style="margin-left: 10px" src="assets/PhoneIcon.jpg" alt="" />
+            <div style="background-color: #ffffff; width: 250px">
+              <p>Contact Info.</p>
+              <p id="phone_number" style="font-weight: bold"></p>
+            </div>
+          </div>
+          <div class="content">
+            <img style="margin-left: 10px" src="assets/PhoneIcon.jpg" alt="" />
+            <div style="background-color: #ffffff; width: 250px">
+              <p>Emergency Contacts</p>
+              <p id="emergency_contact" style="font-weight: bold"></p>
+            </div>
+          </div>
+          <div class="content">
+            <img
+              style="margin-left: 10px"
+              src="assets/InsuranceIcon.jpg"
+              alt=""
+            />
+            <div style="background-color: #ffffff; width: 250px">
+              <p>Insurance Provider</p>
+              <p id="insurance_type" style="font-weight: bold"></p>
+            </div>
+          </div>
+          <button>Show All Information</button>
+        </div>
+        <div class="right-con2">
+          <h1>Lab Results</h1>
+          <ul id="lab-results"></ul>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
